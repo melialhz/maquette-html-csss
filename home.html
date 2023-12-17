@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MindGeek Hosting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        header {
+
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+
+        }
+
+
+        .logo {
+
+            top: 10px;
+            left: 10px;
+            width: 100px;
+          
+            height: auto;
+            margin-left: 10px;
+        }
+
+        nav {
+
+            flex: 1;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .hero {
+            background-image: url('img/background.jpg');
+            color: white;
+            position: relative;
+            text-align: center;
+            padding: 250px 20px;
+
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .search {
+            padding: 10px 50px;
+            color: #ddd;
+            background-color: #fb8a9b;
+
+        }
+
+        .search input {
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 1em;
+            padding: 10px;
+            color: #fff;
+            width: 50%;
+        }
+
+        .search input::placeholder {
+            font-weight: bold;
+            opacity: 0.5;
+            color: #fff;
+        }
+
+        .solutions,
+        .pricing {
+            display: flex;
+            justify-content: space-around;
+            margin: 2em 0;
+        }
+
+        .solutions .solution,
+        .pricing .package {
+            text-align: center;
+            padding: 1em;
+
+        }
+
+        .fa-solid {
+            color: #fb8a9b;
+            font-size: 20px;
+        }
+
+        .icon-text {
+            display: block;
+            font-weight: bold;
+            text-align: center;
+            font-size: 0.9em;
+            color: #020346;
+            margin-top: 5px;
+        }
+
+        footer {
+            background-color: #213e4e;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+
+            flex: 1;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+
+
+        h2 {
+            font-size: 1.8em;
+            font-family: 'Candal', sans-serif;
+            text-align: center;
+            margin: 20px 0;
+            /* Ajustez la marge selon vos besoins */
+            font-size: 24px;
+            
+        }
+
+        @media (max-width: 768px) {
+
+            nav,
+            footer {
+                flex-direction: column;
+            }
+
+        }
+
+        .titre {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 20px 0;
+            border: dotted black 1px;
+            border-bottom: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+
+        <nav>
+            <div> <a href="home.html">
+
+                    <img src="img/logo.png" alt="Logo MindGeek" class="logo"> </div>
+            <div> <a href="page_serveur.html"><i class="fa-solid fa-users"></i></a>
+                <span class="icon-text">Serveur Mutualisé</span>
+            </div>
+            <div> <a href="page_lettre.html"><i class="fa-solid fa-user"></i></a>
+                <span class="icon-text">Serveur Dédié</span>
+            </div>
+            <div> <a href="cloud.html"> <i class="fa-solid fa-cloud"></i></a>
+                <span class="icon-text">Solution "Cloud"</span>
+            </div>
+            <div> <a href="contact.html">  <i class="fa-solid fa-envelope"></i></a>
+                <span class="icon-text">Contact</span>
+            </div>
+          
+           
+        </nav>
+
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>L'hébergement à prix libre</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+    </section>
+
+    <section class="search">
+        <input type="text" placeholder="QUE RECHERCHEZ VOUS ?">
+    </section>
+    <h2 class="titre">Notre solution en 3 points</h2>
+
+    <section class="solutions">
+        <div class="solution">
+            <i class="fa-solid fa-gears"></i>
+            <span class="icon-text">Configuration</span>
+            <p>Description...</p>
+        </div>
+        <div class="solution">
+            <i class="fa-solid fa-chart-line"></i>
+            <span class="icon-text">Monitoring</span>
+            <p>Description...</p>
+        </div>
+        <div class="solution">
+            <i class="fa-solid fa-shield-alt"></i>
+            <span class="icon-text">Sauvegarde</span>
+            <p>Description...</p>
+        </div>
+    </section>
+    <h2 class="titre">Choisissez votre style d'hebergement</h2>
+    <section class="pricing">
+        <div class="package">
+            <i class="fa-solid fa-users"></i>
+            <h3>Serveur Mutualisé</h3>
+            <p>19€ / mois</p>
+            <p>Description...</p>
+        </div>
+        <div class="package">
+            <i class="fa-solid fa-user"></i>
+            <h3>Serveur Dédié</h3>
+            <p>39€ / mois</p>
+            <p>Description...</p>
+        </div>
+        <div class="package">
+            <i class="fa-solid fa-user"></i>
+            
+            <h3>Service Cloud</h3>
+            <p>49€ / mois</p>
+            <p>Description...</p>
+        </div>
+    </section>
+
+    <footer>
+        <nav class="footer-nav">
+            <a href="home.html" class="footer-link">Accueil</a>
+            <a href="page_serveur.html" class="footer-link">Serveur Mutualisé</a>
+            <a href="page_lettre.html" class="footer-link">Serveur Dédié</a>
+            <a href="cloud.html" class="footer-link">Solution "Cloud"</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="contact.html" class="footer-link">Se connecter</a>
+        </nav>
+    </footer>
+</body>
+
+</html>

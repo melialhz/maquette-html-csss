@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <script src="https://kit.fontawesome.com/89dcdc76f5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Open+Sans&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>En-tête Flexbox</title>
+
+</head>
+
+<body class="body">
+    <header>
+        <nav>
+            <div> <a href="home.html">
+                    <img src="img/logo.png" alt="Logo MindGeek" class="logo"></div>
+            <a href="page_serveur.html" class="titre">
+                <i class="fa-solid fa-users"></i>
+                <span>Serveur Mutualisé</span>
+            </a>
+            <a href="page_lettre.html" class="titre">
+                <i class="fa-solid fa-user"></i>
+                <span>Serveur Dédié</span>
+            </a>
+            <a href="cloud.html" class="titre">
+                <i class="fa-solid fa-cloud"></i>
+                <span>Solution "Cloud"</span>
+            </a>
+            <a href="contact.html" class="titre">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </nav>
+    </header>
+
+    <section class="search">
+        <input type="text" placeholder="QUE RECHERCHEZ-VOUS ?" />
+
+    </section>
+
+    <div class="lignep">
+        <h2>Le server dedié</h2>
+    </div>
+    <section class="offres">
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+        </p>
+
+        <div class="offres-container">
+            <div class="offre">
+                <div class="fondperso">
+                    <h3 style="color: white">Server dédié GAME</h3>
+                </div>
+                <ul>
+                    <li> ° Intel Xeon E5</li>
+                    <li> ° E5-1650v2 - 6c/12t</li>
+                    <li> ° 3,5/3,9 GHz - 128 Go RAM</li>
+                    <li> ° DDR3 ECC 1600 MHz</li>
+                    <li> ° 2x480Go SSD RAID SOFT</li>
+                </ul>
+                <p class="prix">159,99€ HT / Mois</p>
+                <button>Commander</button>
+            </div>
+
+            <div class="offre">
+                <div class="fondpro">
+                    <h3 style="color: white">Server dédié STOCKAGE</h3>
+                </div>
+                <ul>
+                    <li> ° Intel Xeon E5</li>
+                    <li> ° E5-2620v3 - 6c/12t</li>
+                    <li> ° 2,4/3,2 GHz - 64 Go RAM</li>
+                    <li> ° DDR4 ECC 1866 MHz</li>
+                    <li> ° 12x4To SAS RAID SOFT</li>
+                    <li> ° vRack 10 Gbps</li>
+                </ul>
+                <p class="prix">319,99€ HT / Mois</p>
+                <button>Commander</button>
+            </div>
+
+            <div class="offre">
+                <div class="fondperf">
+                    <h3 style="color: white">Server dédié HAUT DE GAMME</h3>
+                </div>
+                <ul>
+                    <li> ° Intel Xeon E5</li>
+                    <li> ° 2x E5-2690v3 - 24c/48t</li>
+                    <li> ° 2,6/3,4 GHz - 128 Go RAM</li>
+                    <li> ° DDR4 ECC 2133 MHz</li>
+                    <li> ° 2x4To SAS RAID SOFT</li>
+                    <li> ° vRack 10 Gbp</li>
+                </ul>
+                <p class="prix">559,99€ HT / Mois</p>
+                <button>Commander</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="fondfooter">
+        <footer>
+            <nav class="footer-nav">
+                <a href="home.html" class="footer-link">Accueil</a>
+                <a href="page_serveur.html" class="footer-link">Serveur Mutualisé</a>
+                <a href="page_lettre.html" class="footer-link">Serveur Dédié</a>
+                <a href="cloud.html" class="footer-link">Solution "Cloud"</a>
+                <a href="contact.html" class="footer-link">Contact</a>
+                <a href="contact.html" class="footer-link">Se connecter</a>
+            </nav>
+        </footer>
+    </section>
+</body>
+
+</html>
+
+<style>
+    header {
+        height: 150px;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+        flex-direction: column;
+        padding: 0% 10%;
+        justify-content: space-between;
+
+    }
+
+
+
+    .titre {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    
+        color: inherit;
+        transition: color 0.3s;
+        color: #213e4d;
+    }
+
+    .titre i {
+        color: #fb8a9b;
+      
+        margin-right: 10px;
+       
+        transition: color 0.3s;
+    }
+
+    .titre:hover i {
+        color: #213e4d;
+        
+    }
+
+    .titre span {
+        transition: color 0.3s;
+        
+    }
+
+    .titre:hover span {
+        color: #fb8a9b;
+        /* Couleur du texte au survol */
+    }
+
+  
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #fff;
+        color: #333;
+    }
+
+
+    .logo {
+
+        top: 10px;
+        left: 10px;
+        width: 100px;
+
+        height: auto;
+
+        margin-left: 10px;
+    }
+
+
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .titre {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+        flex-grow: 1;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* Style pour les icônes devant les titres */
+    .icon {
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .content h2 {
+        font-size: 3em;
+        font-weight: bold;
+        /* En gras */
+        margin: 0 0 20px 0;
+        font-family: "Candal", sans-serif;
+       
+    }
+
+    .content h3 {
+        font-size: 1.2em;
+        margin: 0 0 20px 0;
+        font-family: "Open Sans", sans-serif;
+      
+        color: white;
+    }
+
+    .search {
+        background-color: #fb8a9b;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .search input {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 1em;
+        padding: 2px;
+        color: #fff;
+        width: 50%;
+    }
+
+
+    input::placeholder {
+        color: #ffffff;
+        font-family: "Open Sans", sans-serif;
+        font-weight: lighter;
+    }
+
+    .search input::placeholder {
+        font-weight: bold;
+        opacity: 0.5;
+        color: #fff;
+    }
+
+    .section-trois-points,
+    .section-hebergement {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+
+        padding: 40px 10%;
+    }
+
+
+
+    .colonne {
+        flex-basis: 30%;
+
+        margin: 10px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 15px;
+        color: #fb8a9b;
+    }
+
+    .p {
+        font-size: 1em;
+        color: #666;
+    }
+
+
+    footer {
+        padding: 50px 0;
+
+        text-align: center;
+
+        padding: 5% 10%;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: space-around;
+
+        align-items: center;
+
+        flex-wrap: wrap;
+
+    }
+
+    .footer-link {
+        color: white;
+
+        text-decoration: none;
+
+        margin: 5px 15px;
+
+        font-size: 1em;
+
+    }
+
+    .footer-link:hover {
+        text-decoration: underline;
+       
+    }
+
+    .fondfooter {
+        margin-left: 0vw;
+        margin-right: 0vw;
+        background-color: #213e4d;
+        
+    }
+
+    .offres {
+        text-align: center;
+      
+        margin: 40px 0;
+  
+        padding: 40px 10%;
+    }
+
+    .offres-container {
+        display: flex;
+        justify-content: space-around;
+      
+        margin-top: 20px;
+        
+    }
+
+    .offre {
+        flex-basis: calc(33.333% - 20px);
+        
+        border-style: dotted;
+        padding: 20px;
+        margin: 10px;
+        /* Espace entre les offres */
+        background-color: #f9f9f9;
+      
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        
+    }
+
+    .offre h3 {
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .offre ul {
+        text-align: left;
+        /* Alignement du texte pour les listes */
+        padding: 0;
+        list-style: none;
+        /* Retire les puces des listes */
+    }
+
+    .offre ul li {
+        margin-bottom: 10px;
+    }
+
+    .offre .prix {
+        font-size: 1.5em;
+        /* Taille de la police pour le prix */
+        margin: 20px 0;
+       
+    }
+
+    .offre button {
+        background-color: #fb8a9b;
+       
+        color: white;
+        border: none;
+       
+        padding: 10px 20px;
+    
+        cursor: pointer;
+        margin-bottom: 10px;
+       
+    }
+
+    .offre button:hover {
+        background-color: #e07a82;
+        /* Couleur de fond au survol */
+    }
+
+    .fondperso {
+        background-color: #213e4d;
+
+        font-size: 12px;
+    }
+
+    .fondpro {
+        background-color: #213e4d;
+
+        font-size: 12px;
+    }
+
+    .fondperf {
+        background-color: #213e4d;
+
+        font-size: 12px;
+    }
+    .lignep {
+        margin-top: 5%;
+        width: 80%;
+        color:  #213e4d;
+        background-color: white;
+        text-align: center;
+        border-top: 1.5px dotted  #213e4d;
+        font-size: 1em;
+        border-left: 1.5px dotted  #213e4d;
+        border-right: 1.5px dotted  #213e4d;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        font-family: 'Candal', sans-serif;
+
+       
+    }
+
+
+    @media (max-width: 768px) {
+
+        nav,
+        footer {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .offres-container {
+            flex-direction: column;
+
+        }
+    }
+
+
+
+    .offres-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+        
+    }
+
+    .offre {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .offre ul {
+        list-style: none;
+     
+        padding: 0;
+    }
+
+    .offre ul li {
+        margin-bottom: 10px;
+    }
+
+    .fondperso,
+    .fondpro,
+    .fondperf {
+        padding: 10px;
+        background-color: #213e4d;
+        /* Couleur de fond uniforme */
+    }
+
+    .prix {
+        font-size: 1.2em;
+        /* Taille de police uniforme pour le prix */
+    }
+
+    button {
+        padding: 10px 20px;
+        /* Padding uniforme pour les boutons */
+    }
+
+    .h2 {
+        font-size: 1.8em;
+        font-family: 'Candal', sans-serif;
+        text-align: center;
+        margin: 20px 0;
+
+        font-size: 24px;
+        width: 100%;
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+</style>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MindGeek Hosting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #fff;
+            color: #333;
+
+        }
+
+
+        .cloud-plans {
+            width: 80%;
+
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-around;
+            margin: 2em 0;
+
+            display: flex;
+    justify-content: space-around; /* Espace égal entre les offres */
+    
+            align-items: center;
+            display: flex;
+    justify-content: space-around; /* Espace égal entre les offres */
+    margin-left: 60px;
+    text-align: center; 
+  
+
+        }
+
+
+
+        .fa-solid {
+            color: #fb8a9b;
+            font-size: 20px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        .search {
+            padding: 10px 50px;
+            color: #ddd;
+            background-color: #fb8a9b;
+
+        }
+
+        .search input {
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 1em;
+            padding: 10px;
+            color: #fff;
+            width: 50%;
+        }
+
+        .search input::placeholder {
+            font-weight: bold;
+            opacity: 0.5;
+            color: #fff;
+        }
+
+
+        header {
+
+
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+
+        }
+
+
+        .logo {
+
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            /* Ajustez la largeur du logo selon vos besoins */
+            height: auto;
+            /* Cela garantit que la hauteur s'ajuste proportionnellement à la largeur */
+            margin-left: 10px;
+        }
+
+        nav {
+
+            flex: 1;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .cloud-plans h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+
+        .plan {
+
+            border: dotted black 1px;
+
+            padding: 40px;
+
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+    justify-content: space-around; /* Espace égal entre les offres */
+    margin-top: 20px;
+    text-align: center; /* Centre le texte des titres */
+   
+   
+
+
+        }
+
+        .plan h3 {
+            color: white;
+            /* Adjust the color to match your design */
+            margin-bottom: 10px;
+        }
+
+        .plan ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .plan li {
+            margin-bottom: 5px;
+        }
+
+        .plan p {
+            font-weight: bold;
+            color: #2b2b31;
+            /* Adjust the color to match the price color in your design */
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 100px;
+            background-color: #fb8a9b;
+            /* Adjust the color to match your design */
+            border: none;
+
+            color: white;
+
+        }
+
+        button:hover {
+            background-color: #e07985;
+            /* Adjust the color for hover effect */
+        }
+
+        .plan:hover {
+            opacity: 0.8;
+            /* Transparence au survol */
+        }
+
+        footer {
+        padding: 50px 0;
+        text-align: center;
+
+        padding: 5% 10%;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-link {
+        color: white;
+        text-decoration: none;
+        margin: 5px 15px;
+        font-size: 1em;
+    }
+
+    .footer-link:hover {
+        text-decoration: underline;
+    }
+
+    .fondfooter {
+        margin-left: 0vw;
+        margin-right: 0vw;
+        background-color: #213e4d;
+    }
+
+    
+
+
+        h2 {
+            font-size: 1.8em;
+            font-family: 'Candal', sans-serif;
+            text-align: center;
+            margin: 20px 0;
+
+            font-size: 24px;
+        }
+
+        .titre {
+
+            margin: auto;
+            text-align: center;
+            padding: 20px 0;
+            border: dotted black 1.5px;
+            border-bottom: none;
+            margin-top: 20px;
+            color: #213e4d;
+
+        }
+
+
+
+
+        .corp {
+            margin: 0 50px;
+        }
+
+        .haut {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 20px;
+            color: inherit;
+            transition: color 0.3s;
+
+
+
+            font-size: 18px;
+            /* Cela a été laissé tel quel car il n'y avait pas de directive pour le changer */
+            font-weight: bold;
+            flex-grow: 1;
+
+            flex-direction: column;
+        }
+
+
+
+
+        .haut i {
+            color: #fb8a9b;
+
+            margin-right: 5px;
+
+            transition: color 0.3s;
+        }
+
+        .haut:hover i {
+            color: #213e4d;
+
+        }
+
+        .haut span {
+            transition: color 0.3s;
+
+        }
+
+        .haut:hover span {
+            color: #fb8a9b;
+
+        }
+
+        @media (max-width: 768px) {
+
+            nav,
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cloud-plans {
+                flex-direction: column;
+
+            }
+        }
+
+        .tete {
+
+            margin-left: 0vw;
+            margin-right: 0vw;
+            background-color: #213e4d;
+            font-size: 12px;
+            color: white;
+
+            padding: 10px 5em;
+
+
+
+
+        }
+    </style>
+
+<body>
+    <header>
+
+
+        <nav>
+            <div> <a href="home.html">
+                    <img src="img/logo.png" alt="Logo MindGeek" class="logo"></div>
+            <a href="page_serveur.html" class="haut">
+                <i class="fa-solid fa-users"></i>
+                <span>Serveur Mutualisé</span>
+            </a>
+            <a href="page_lettre.html" class="haut">
+                <i class="fa-solid fa-user"></i>
+                <span>Serveur Dédié</span>
+            </a>
+            <a href="cloud.html" class="haut">
+                <i class="fa-solid fa-cloud"></i>
+                <span>Solution "Cloud"</span>
+            </a>
+            <a href="contact.html" class="haut">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </nav>
+
+    </header>
+    <section class="search">
+        <input type="text" placeholder="QUE RECHERCHEZ VOUS ?">
+    </section>
+    <section class="corp">
+        <h2 class="titre">Le cloud</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+
+        <section class="cloud-plans">
+
+
+            <div class="plan">
+                <h3 class="tete">Cloud STARTER</h3>
+                <ul>
+                    <li>Intel E5-1650v2</li>
+                    <li>3,5 GHz - 128 Go RAM</li>
+                    <li>2x480Go SSD RAID SOFT</li>
+                    <li>2x450Go SSD RAID SOFT</li>
+                    <li>3,5 GHz - 128 Go RAM</li>
+                    
+
+
+                </ul>
+                <p>299,99€ HT / Mois</p>
+                <button>Commander</button>
+            </div>
+            <div class="plan">
+                <h3 class="tete">Cloud EVASION</h3>
+                <ul>
+                    <li>Intel Xeon E5</li>
+                    <li>2,4 GHz - 64 Go RAM</li>
+                    <li>1x240Go SSD RAID SOFT</li>
+                    <li>3,5 GHz - 128 Go RAM</li>
+                    <li>2x480Go SSD RAID SOFT</li>
+                    <li>3,5 GHz - 128 Go RAM</li>
+                </ul>
+                <p>489,99€ HT / Mois</p>
+                <button>Commander</button>
+            </div>
+            <div class="plan">
+                <h3 class="tete">Cloud LIBERTY</h3>
+                <ul>
+                    <li>Intel Xeon E5</li>
+                    <li>2,6 GHz - 128 Go RAM</li>
+                    <li>2x450Go SSD RAID SOFT</li>
+                    <li>3,5 GHz - 128 Go RAM</li>
+                    <li>2x480Go SSD RAID SOFT</li>
+                    <li>3,5 GHz - 128 Go RAM</li>
+                </ul>
+                <p>581,99€ HT / Mois</p>
+                <button>Commander</button>
+            </div>
+        </section>
+    </section>
+
+
+
+<section class="fondfooter">
+    <footer>
+        <nav class="footer-nav">
+            <a href="home.html" class="footer-link">Accueil</a>
+            <a href="page_serveur.html" class="footer-link">Serveur Mutualisé</a>
+            <a href="page_lettre.html" class="footer-link">Serveur Dédié</a>
+            <a href="cloud.html" class="footer-link">Solution "Cloud"</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="contact.html" class="footer-link">Se connecter</a>
+        </nav>
+    </footer>
+</section>
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <script src="https://kit.fontawesome.com/89dcdc76f5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Open+Sans&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>En-tête Flexbox</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body class="body">
+
+    <header>
+
+
+        <nav>
+            <div> <a href="home.html">
+
+                    <img src="img/logo.png" alt="Logo MindGeek" class="logo"> </div>
+            <div> <a href="page_serveur.html"><i class="fa-solid fa-users"></i></a>
+                <span class="icon-text">Serveur Mutualisé</span>
+            </div>
+            <div> <a href="page_lettre.html"><i class="fa-solid fa-envelope"></i></a>
+                <span class="icon-text">Serveur Dédié</span>
+            </div>
+            <div> <a href="page_mutualise.html"><i class="fa-solid fa-user"></i></a>
+                <span class="icon-text">Solution "Cloud"</span>
+            </div>
+            <div> <a href="page_cloud.html"><i class="fa-solid fa-cloud"></i></a>
+                <span class="icon-text">Contact</span>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <section class="search">
+        <input type="text" placeholder="QUE RECHERCHEZ VOUS ?">
+    </section>
+
+    <div class="sections">
+        <div class="titre1">
+            <h2>contactez-nous</h2>
+        </div>
+        <section class="section-trois-points">
+            <div class="colonne">
+                <a href="mailto:contact@3wa.fr" class="icone-link">
+                    <div><i class="fa-solid fa-paper-plane" style="color: #fb8a9b"></i></div>
+                    <div class="textep">
+                        <p>
+                            Mail: contact@3wa.fr
+                        </p>
+                    </div>
+            </div>
+            <div class="colonne">
+                <a href="tel:+33140581972" class="icone-link">
+                    <div><i class="fa-solid fa-phone" style="color: #fb8a9b"></i></div>
+                    <div class="textep">
+                        <p>
+                            Tel.: +33 1 40 58 19 72
+                        </p>
+                    </div>
+            </div>
+            <div class="colonne">
+                <a href="https://www.google.com/maps/search/?api=1&query=46+rue+René+Clair+75018+Paris" target="_blank"
+                    class="icone-link">
+                    <div><i class="fa-solid fa-envelope" style="color: #fb8a9b"></i></div>
+                    <div class="textep">
+                        <p>
+                            MindGeek 46, rue René Clair 75018 Paris
+                        </p>
+                    </div>
+            </div>
+        </section>
+        <section class="map-container">
+
+            
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.283483338895!2d2.315068276657273!3d48.87187217133411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f55f4bda539%3A0xc72da9014f6af3e8!2sFranklin%20D.%20Roosevelt!5e0!3m2!1sfr!2sfr!4v1702832030365!5m2!1sfr!2sfr" width="100% " height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="fondfooter">
+            <footer>
+                <nav class="footer-nav">
+                    <a href="home.html" class="footer-link">Accueil</a>
+                    <a href="page_serveur.html" class="footer-link">Serveur Mutualisé</a>
+                    <a href="page_lettre.html" class="footer-link">Serveur Dédié</a>
+                    <a href="cloud.html" class="footer-link">Solution "Cloud"</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                    <a href="contact.html" class="footer-link">Se connecter</a>
+                </nav>
+            </footer>
+        </section>
+</body>
+
+</html>
+
+<style>
+    .header {
+
+        color: #fff;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+
+    }
+
+
+    .logo {
+
+        top: 10px;
+        left: 10px;
+        width: 100px;
+
+        height: auto;
+
+        margin-left: 10px;
+    }
+
+    .nav {
+
+        flex: 1;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+
+    .titre {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        transition: color 0.3s;
+
+    }
+
+    .titre i {
+        color: #fb8a9b;
+        margin-right: 10px;
+        transition: color 0.3s;
+
+    }
+
+    .titre:hover i {
+        color: #213e4d;
+
+    }
+
+    .titre span {
+        transition: color 0.3s;
+
+    }
+
+    .titre:hover span {
+        color: #fb8a9b;
+
+    }
+
+    main h2 {
+        font-size: 1.8em;
+
+    }
+
+    main h3 {
+        font-size: 1.2em;
+    }
+
+    body {
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+
+    .fa-solid {
+        color: #fb8a9b;
+        font-size: 20px;
+    }
+
+
+    .icon-text {
+        display: block;
+        font-weight: bold;
+        text-align: center;
+        font-size: 0.9em;
+        color:  #213e4d;
+        margin-top: 5px;
+    }
+    
+
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .titre {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+        flex-grow: 1;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .icon {
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .image-background {
+        background-image: url("background.jpg");
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        text-align: center;
+        color: rgb(255, 255, 255);
+
+    }
+
+    .content {
+        padding: 100px 0;
+
+    }
+
+    .content h2 {
+        font-size: 3em;
+
+        font-weight: bold;
+        margin: 0 0 20px 0;
+        font-family: "Candal", sans-serif;
+
+    }
+
+    .content h3 {
+        font-size: 1.2em;
+
+        margin: 0 0 20px 0;
+
+        font-family: "Open Sans", sans-serif;
+        color: white;
+    }
+
+    .search {
+        padding: 10px 50px;
+        color: #ddd;
+        background-color: #fb8a9b;
+
+    }
+
+    .search input {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 1em;
+        padding: 10px;
+        color: #fff;
+        width: 50%;
+    }
+
+    .search input::placeholder {
+        font-weight: bold;
+        opacity: 0.5;
+        color: #fff;
+    }
+
+    input::placeholder {
+        color: #ffffff;
+        font-family: "Open Sans", sans-serif;
+        font-weight: lighter;
+    }
+
+    .section-trois-points,
+    .section-hebergement {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        background-color: white;
+        justify-content: center;
+
+        align-items: center;
+
+        padding: 40px 10%;
+    }
+
+    h2 {
+        width: 100%;
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .textep {
+        border-top: 1px dotted #ccc;
+
+        border-color: #fb8a9b;
+
+    }
+
+    .colonne {
+        flex-basis: 30%;
+
+        margin: 10px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 15px;
+        color: #fb8a9b;
+    }
+
+    p {
+        font-size: 1em;
+        color: #666;
+    }
+
+
+    .titre1 {
+        margin-top: 5%;
+        width: 80%;
+        color:  #213e4d;
+        background-color: white;
+        text-align: center;
+        border-top: 1.5px dotted  #213e4d;
+        font-size: 1em;
+        border-left: 1.5px dotted  #213e4d;
+        border-right: 1.5px dotted  #213e4d;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        font-family: 'Candal', sans-serif;
+
+    }
+
+
+    footer {
+        padding: 50px 0;
+        text-align: center;
+
+        padding: 5% 10%;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-link {
+        color: white;
+        text-decoration: none;
+        margin: 5px 15px;
+        font-size: 1em;
+    }
+
+    .footer-link:hover {
+        text-decoration: underline;
+    }
+
+    .fondfooter {
+        margin-left: 0vw;
+        margin-right: 0vw;
+        background-color: #213e4d;
+    }
+
+    
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+
+
+    @media (max-width: 768px) {
+
+nav,
+footer {
+    flex-direction: column;
+    text-align: center;
+}
+
+.colonne {
+    flex-direction: column;
+
+}
+}
+</style>
